@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ThemeToggle } from './ThemeToggle';
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
             </Link>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-center space-x-4">
               <Link
                 href="/"
                 className="text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium"
@@ -30,6 +31,7 @@ export default function Header() {
               >
                 Blog
               </Link>
+              <ThemeToggle />
             </div>
           </div>
         </div>
