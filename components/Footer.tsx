@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200">
+    <footer className="bg-muted border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="text-gray-600 text-sm mb-4 md:mb-0">
+          <div className="text-muted-foreground text-sm mb-4 md:mb-0">
             © 2024 MiBlog. Todos los derechos reservados.
           </div>
           <div className="flex space-x-6">
@@ -11,7 +11,7 @@ export default function Footer() {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900 text-sm"
+              className="text-muted-foreground hover:text-foreground text-sm"
             >
               Twitter/X
             </a>
@@ -19,7 +19,7 @@ export default function Footer() {
               href="https://tiktok.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900 text-sm"
+              className="text-muted-foreground hover:text-foreground text-sm"
             >
               TikTok
             </a>
@@ -27,7 +27,7 @@ export default function Footer() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900 text-sm"
+              className="text-muted-foreground hover:text-foreground text-sm"
             >
               LinkedIn
             </a>
@@ -35,7 +35,7 @@ export default function Footer() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900 text-sm"
+              className="text-muted-foreground hover:text-foreground text-sm"
             >
               GitHub
             </a>

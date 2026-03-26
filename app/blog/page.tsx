@@ -55,7 +55,7 @@ export default function Blog() {
   const gridPosts = mockPosts.filter(post => post.id !== featuredPost.id).slice(0, 6);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Header />
       <main className="grow">
         <BlogHero post={featuredPost} />
