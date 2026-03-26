@@ -42,7 +42,7 @@ export default function BlogSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Artículo destacado */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="w-full h-48 bg-linear-to-br from-blue-400 to-purple-600"></div>
+            <div className="w-full h-48 bg-linear-to-br from-blue-400 to-purple-600 transition-transform duration-300 hover:scale-105"></div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 {featuredPost.title}
@@ -63,7 +63,7 @@ export default function BlogSection() {
           <div className="space-y-6">
             {regularPosts.map((post) => (
               <div key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col sm:flex-row">
-                <div className="w-full sm:w-32 h-32 bg-linear-to-br from-indigo-400 to-pink-600"></div>
+                <div className="w-full sm:w-32 h-32 bg-linear-to-br from-indigo-400 to-pink-600 transition-transform duration-300 hover:scale-105"></div>
                 <div className="p-4 flex-1">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     {post.title}

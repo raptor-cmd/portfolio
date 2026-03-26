@@ -6,7 +6,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <div className="w-full h-96 bg-linear-to-br from-green-400 to-blue-600 rounded-lg shadow-lg"></div>
+            <div className="w-full h-96 bg-linear-to-br from-green-400 to-blue-600 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"></div>
           </div>
           <div className="order-1 lg:order-2">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">About me</h2>
