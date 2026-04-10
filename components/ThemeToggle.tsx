@@ -12,7 +12,7 @@ export function ThemeToggle({ className = '' }: ThemeToggleProps) {
   return (
     <button
       onClick={toggleTheme}
-      className={`p-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors ${className}`}
+      className={`p-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-100 hover:text-white dark:hover:bg-gray-800 transition-colors ${className}`}
       aria-label="Toggle theme"
     >
       {theme === 'light' ? (
