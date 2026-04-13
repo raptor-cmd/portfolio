@@ -34,9 +34,12 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Left column - Profile image */}
               <div className="flex justify-center md:justify-start">
-                <div className="w-full h-64 rounded-lg bg-linear-to-br from-violet-500 via-pink-500 to-orange-400 flex items-center justify-center">
+                <a
+                  href="#contact"
+                  className="inline-flex w-full h-64 rounded-lg bg-linear-to-br from-violet-500 via-pink-500 to-orange-400 items-center justify-center transition-transform duration-300 hover:scale-105"
+                >
                   <span className="text-white font-semibold text-lg">Profile</span>
-                </div>
+                </a>
               </div>
               
               {/* Right column - About content */}
@@ -64,9 +67,12 @@ export default function About() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {projects.map((project) => (
               <div key={project.id} className="bg-card rounded-lg p-4 shadow-sm border hover:shadow-md transition-shadow">
-                <div className="w-full h-32 bg-linear-to-br from-emerald-400 via-cyan-500 to-blue-600 rounded-md mb-3 flex items-center justify-center">
+                <a
+                  href="#"
+                  className="inline-flex w-full h-32 bg-linear-to-br from-emerald-400 via-cyan-500 to-blue-600 rounded-md mb-3 items-center justify-center transition-transform duration-300 hover:scale-105"
+                >
                   <span className="text-white font-medium text-sm">{project.title}</span>
-                </div>
+                </a>
                 <h3 className="font-semibold text-foreground mb-1">{project.title}</h3>
                 <p className="text-sm text-muted-foreground">{project.description}</p>
               </div>
@@ -83,9 +89,12 @@ export default function About() {
                 <div className="flex flex-col md:flex-row gap-6">
                   {/* Thumbnail */}
                   <div className="shrink-0">
-                    <div className="w-full md:w-32 h-24 bg-linear-to-br from-rose-400 via-fuchsia-500 to-indigo-600 rounded-md flex items-center justify-center">
+                    <a
+                      href="#"
+                      className="inline-flex w-full md:w-32 h-24 bg-linear-to-br from-rose-400 via-fuchsia-500 to-indigo-600 rounded-md items-center justify-center transition-transform duration-300 hover:scale-105"
+                    >
                       <span className="text-white font-medium text-xs">Talk</span>
-                    </div>
+                    </a>
                   </div>
                   
                   {/* Content */}

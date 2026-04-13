@@ -41,7 +41,11 @@ export default function BlogSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Artículo destacado */}
           <div className="bg-card rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
-            <div className="w-full h-72 bg-linear-to-br from-blue-400 to-purple-600 transition-transform duration-300 hover:scale-105"></div>
+            <Link
+              href={`/blog/${featuredPost.id}`}
+              className="inline-flex w-full h-72 bg-linear-to-br from-blue-400 to-purple-600 items-center justify-center transition-transform duration-300 hover:scale-105"
+            >
+            </Link>
             <div className="p-4 flex-1 flex flex-col justify-center">
               <h3 className="text-xl font-bold text-card-foreground mb-3">
                 {featuredPost.title}
@@ -62,7 +66,11 @@ export default function BlogSection() {
           <div className="space-y-6">
             {regularPosts.map((post) => (
               <div key={post.id} className="bg-card rounded-lg shadow-md overflow-hidden flex flex-col sm:flex-row">
-                <div className="w-full sm:w-32 h-32 bg-linear-to-br from-indigo-400 to-pink-600 transition-transform duration-300 hover:scale-105"></div>
+                <Link
+                  href={`/blog/${post.id}`}
+                  className="inline-flex w-full sm:w-32 h-32 bg-linear-to-br from-indigo-400 to-pink-600 items-center justify-center transition-transform duration-300 hover:scale-105"
+                >
+                </Link>
                 <div className="p-4 flex-1">
                   <h3 className="text-lg font-semibold text-card-foreground mb-2">
                     {post.title}

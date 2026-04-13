@@ -55,7 +55,11 @@ export default async function BlogPost({ params } : { params: Promise<{ slug: st
               {relatedPosts.map((post) => (
                 <article key={post.id} className="flex gap-4 p-4 rounded-lg border border-border hover:bg-muted/50 transition-colors">
                   {/* Thumbnail with gradient */}
-                  <div className="w-20 h-20 bg-linear-to-br from-cyan-400 to-blue-600 rounded-md shrink-0 transition-transform duration-300 hover:scale-105"></div>
+                  <a 
+                    href={`/blog/${post.id}`}
+                    className="inline-flex w-20 h-20 bg-linear-to-br from-cyan-400 to-blue-600 rounded-md shrink-0 items-center justify-center transition-transform duration-300 hover:scale-105"
+                  >
+                  </a>
                   
                   {/* Content */}
                   <div className="flex-1">

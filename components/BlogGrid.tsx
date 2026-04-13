@@ -12,7 +12,11 @@ export default function BlogGrid({ posts }: BlogGridProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {posts.map((post) => (
             <div key={post.id} className="bg-card rounded-lg shadow-md overflow-hidden">
-              <div className="w-full h-48 bg-linear-to-br from-cyan-400 to-blue-600 transition-transform duration-300 hover:scale-105"></div>
+              <Link
+                href={`/blog/${post.id}`}
+                className="inline-flex w-full h-48 bg-linear-to-br from-cyan-400 to-blue-600 items-center justify-center transition-transform duration-300 hover:scale-105"
+              >
+              </Link>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-card-foreground mb-3">
                   {post.title}

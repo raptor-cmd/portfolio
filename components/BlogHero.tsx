@@ -11,7 +11,11 @@ export default function BlogHero({ post }: BlogHeroProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-1 lg:order-1">
-            <div className="w-full h-96 bg-linear-to-br from-purple-400 to-indigo-600 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"></div>
+            <Link
+              href={`/blog/${post.id}`}
+              className="inline-flex w-full h-96 bg-linear-to-br from-purple-400 to-indigo-600 rounded-lg shadow-lg items-center justify-center transition-transform duration-300 hover:scale-105"
+            >
+            </Link>
           </div>
           <div className="order-2 lg:order-2">
             <h1 className="text-4xl font-bold text-foreground mb-4">{post.title}</h1>
