@@ -68,7 +68,7 @@ export default function About() {
             {projects.map((project) => (
               <div key={project.id} className="bg-card rounded-lg p-4 shadow-sm border hover:shadow-md transition-shadow">
                 <a
-                  href="#"
+                  href={`/projects/${project.id}`}
                   className="inline-flex w-full h-32 bg-linear-to-br from-emerald-400 via-cyan-500 to-blue-600 rounded-md mb-3 items-center justify-center transition-transform duration-300 hover:scale-105"
                 >
                   <span className="text-white font-medium text-sm">{project.title}</span>
@@ -90,7 +90,7 @@ export default function About() {
                   {/* Thumbnail */}
                   <div className="shrink-0">
                     <a
-                      href="#"
+                      href={`/talks/${talk.id}`}
                       className="inline-flex w-full md:w-32 h-24 bg-linear-to-br from-rose-400 via-fuchsia-500 to-indigo-600 rounded-md items-center justify-center transition-transform duration-300 hover:scale-105"
                     >
                       <span className="text-white font-medium text-xs">Talk</span>
@@ -102,7 +102,7 @@ export default function About() {
                     <h3 className="text-xl font-semibold text-foreground mb-2">{talk.title}</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed">{talk.summary}</p>
                     <a
-                      href="#"
+                      href={`/talks/${talk.id}`}
                       className="inline-block bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors text-sm"
                     >
                       Ver charla
