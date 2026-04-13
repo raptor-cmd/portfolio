@@ -16,43 +16,64 @@ export const blogPosts: BlogPost[] = [
       
       At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
     `,
+    author: 'Carlos Rodríguez',
+    publishedAt: '2024-03-15',
+    readingTime: 8,
     featured: true
   },
   {
     id: '2',
     title: 'TypeScript Best Practices',
     summary: 'Aprende las mejores prácticas para escribir código TypeScript robusto y mantenible en tus proyectos.',
-    content: 'Contenido completo sobre TypeScript...'
+    content: 'Contenido completo sobre TypeScript...',
+    author: 'María González',
+    publishedAt: '2024-03-10',
+    readingTime: 6
   },
   {
     id: '3',
     title: 'Tailwind CSS Avanzado',
     summary: 'Explora técnicas avanzadas de Tailwind CSS para crear diseños personalizados y optimizados.',
-    content: 'Contenido completo sobre Tailwind CSS...'
+    content: 'Contenido completo sobre Tailwind CSS...',
+    author: 'Carlos Rodríguez',
+    publishedAt: '2024-03-05',
+    readingTime: 5
   },
   {
     id: '4',
     title: 'React Server Components',
     summary: 'Entiende cómo funcionan los Server Components en React y cuándo utilizarlos en tus aplicaciones.',
-    content: 'Contenido completo sobre React Server Components...'
+    content: 'Contenido completo sobre React Server Components...',
+    author: 'Ana Martínez',
+    publishedAt: '2024-02-28',
+    readingTime: 7
   },
   {
     id: '5',
     title: 'Optimización de Performance',
     summary: 'Técnicas y estrategias para optimizar el rendimiento de tus aplicaciones web modernas.',
-    content: 'Contenido completo sobre optimización...'
+    content: 'Contenido completo sobre optimización...',
+    author: 'Carlos Rodríguez',
+    publishedAt: '2024-02-20',
+    readingTime: 10
   },
   {
     id: '6',
     title: 'Testing en React',
     summary: 'Guía completa para implementar pruebas efectivas en tus aplicaciones React con Jest y Testing Library.',
-    content: 'Contenido completo sobre testing...'
+    content: 'Contenido completo sobre testing...',
+    author: 'María González',
+    publishedAt: '2024-02-15',
+    readingTime: 9
   },
   {
     id: '7',
     title: 'State Management con Zustand',
     summary: 'Aprende a gestionar el estado de tus aplicaciones React de forma sencilla con Zustand.',
-    content: 'Contenido completo sobre Zustand...'
+    content: 'Contenido completo sobre Zustand...',
+    author: 'Ana Martínez',
+    publishedAt: '2024-02-10',
+    readingTime: 4
   }
 ];
 
