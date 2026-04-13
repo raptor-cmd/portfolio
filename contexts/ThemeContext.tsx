@@ -16,13 +16,19 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as Theme
+    const currentTheme = document.documentElement.getAttribute('data-theme') as Theme
+    
     if (savedTheme) {
       setTheme(savedTheme)
-      document.documentElement.setAttribute('data-theme', savedTheme)
+      if (currentTheme !== savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme)
+      }
     } else {
       const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
       setTheme(systemTheme)
-      document.documentElement.setAttribute('data-theme', systemTheme)
+      if (currentTheme !== systemTheme) {
+        document.documentElement.setAttribute('data-theme', systemTheme)
+      }
     }
   }, [])
 
