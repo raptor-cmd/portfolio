@@ -40,28 +40,20 @@ export default function BlogSection() {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Artículo destacado */}
-          <div className="bg-card rounded-lg shadow-lg overflow-hidden flex flex-col h-full relative group">
-            <div className="w-full h-48 bg-linear-to-br from-blue-400 to-purple-600 transition-all duration-500 group-hover:h-full absolute top-0 left-0"></div>
-            <div className="relative z-10 p-6 flex flex-col h-full justify-end opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+          <div className="bg-card rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <div className="w-full h-72 bg-linear-to-br from-blue-400 to-purple-600 transition-transform duration-300 hover:scale-105"></div>
+            <div className="p-4 flex-1 flex flex-col justify-center">
               <h3 className="text-xl font-bold text-card-foreground mb-3">
                 {featuredPost.title}
               </h3>
               <p className="text-muted-foreground mb-4 line-clamp-3">
                 {featuredPost.summary}
               </p>
-            </div>
-            <div className="absolute inset-0 z-20 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6">
-              <h3 className="text-2xl font-bold text-white mb-4 text-center">
-                {featuredPost.title}
-              </h3>
-              <p className="text-white/90 mb-8 text-center line-clamp-3">
-                {featuredPost.summary}
-              </p>
               <Link
                 href={`/blog/${featuredPost.id}`}
-                className="inline-flex items-center text-white bg-white/20 hover:bg-white/30 backdrop-blur-sm px-6 py-3 rounded-full font-medium transition-all duration-300 transform translate-y-4 group-hover:translate-y-0"
+                className="inline-flex items-center text-primary hover:text-primary/80 text-sm font-medium"
               >
-                Leer más
+                Leer
               </Link>
             </div>
           </div>
