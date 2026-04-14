@@ -21,7 +21,7 @@ export default function Header() {
       <header className="bg-card shadow-sm border-b border-border">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <Link href="/" className="text-2xl font-bold text-foreground">
                 MiBlog
               </Link>
