@@ -2,11 +2,12 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BlogHero from '@/components/BlogHero';
 import BlogGrid from '@/components/BlogGrid';
-import { getFeaturedPost, getAllPosts } from '@/data/blogPosts';
+import { fetchFeaturedPost, fetchPosts } from '@/lib/api';
 
-export default function Blog() {
-  const featuredPost = getFeaturedPost();
-  const gridPosts = getAllPosts().filter(post => post.id !== featuredPost.id).slice(0, 6);
+export default async function Blog() {
+  const featuredPost = await fetchFeaturedPost();
+  const allPosts = await fetchPosts();
+  const gridPosts = allPosts.filter(post => post.id !== featuredPost.id).slice(0, 6);
 
   return (
     <div className="min-h-screen flex flex-col bg-background">

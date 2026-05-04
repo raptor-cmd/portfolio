@@ -2,14 +2,14 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NotFound from "@/components/NotFound";
-import { getPostById, getRelatedPosts } from "@/data/blogPosts";
+import { fetchPostById, fetchRelatedPosts } from "@/lib/api";
 
 export default async function BlogPost({ params } : { params: Promise<{ slug: string }> }) {
   const {slug} = await params;
   
   // Find the post by slug (using id as slug for this example)
-  const post = getPostById(slug);
-  const relatedPosts = getRelatedPosts(slug);
+  const post = await fetchPostById(slug);
+  const relatedPosts = await fetchRelatedPosts(slug);
 
   // If post doesn't exist, show NotFound component
   if (!post) {

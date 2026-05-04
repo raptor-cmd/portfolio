@@ -1,9 +1,12 @@
 import Link from 'next/link';
-import { blogPosts, getFeaturedPost } from '@/data/blogPosts';
+import { fetchPosts, fetchFeaturedPost } from '@/lib/api';
 
-export default function BlogSection() {
-  const featuredPost = getFeaturedPost();
-  const regularPosts = blogPosts.filter(post => !post.featured).slice(0, 3);
+export default async function BlogSection() {
+  const [featuredPost, allPosts] = await Promise.all([
+    fetchFeaturedPost(),
+    fetchPosts()
+  ]);
+  const regularPosts = allPosts.filter(post => !post.featured).slice(0, 3);
 
   return (
     <section className="py-16 bg-muted">

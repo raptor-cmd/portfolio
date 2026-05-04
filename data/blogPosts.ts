@@ -3,7 +3,7 @@ import type { BlogPost } from "@/types/blog";
 export const blogPosts: BlogPost[] = [
   {
     id: '1',
-    title: 'Introducción a Next.js 15',
+    title: 'Introducción a Next.js 15 Editado',
     summary: 'Descubre las nuevas características y mejoras de Next.js 15, incluyendo el App Router y optimizaciones de rendimiento.',
     content: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
